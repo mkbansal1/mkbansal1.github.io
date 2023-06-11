@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation example</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: goldenrod;
+        }
+
+        .container {
+            width: 30vw;
+            background-color: white;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 50px;
+            background-color: #34384b;
+        }
+
+        main {
+            margin: 10px;
+            background-color: white;
+        }
+
+        main img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        main section {
+            padding: 10px;
+            background-color: white;
+        }
+
+        main section:nth-child(2n) {
+            background-color: gray;
+        }
+
+        .hamburger {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            float: right;
+            justify-content: center; /* Horizontal align */
+            align-items: center; /* Vertical Align */
+            border-left: 1px solid black;
+        }
+
+        .hamburger span {
+            height: 2px;
+            width: 25px;
+            display: block;
+            background-color: white;
+            margin: 2px 0;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-top: 50px;
+            width: 30vw;
+            background-color:antiquewhite;
+            height: 100vh;
+            display: none;
+        }
+
+        .is-open-menu .navigation {
+            display: block;
+            animation: mobile-navigation 2s ease-out backwards;
+        }
+
+        .is-close-menu .navigation {
+            display: block;
+            animation: mobile-navigation-close 2s ease-in forwards;
+        }
+
+        .navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            padding: 20px;
+        }
+
+        .navigation ul li:nth-child(2n) {
+            background-color:aquamarine;
+        }
+
+        @keyframes mobile-navigation {
+            0% {
+                width: 0;
+                left: 30vw;
+            }
+
+            100% {
+                width: 30vw;
+                left: 0;
+            }
+        }
+
+        @keyframes mobile-navigation-close {
+            0% {
+                width: 30vw;
+                left: 0;
+            }
+
+            50% {
+                opacity: 90%;
+            }
+
+            90% {
+                opacity: 95%;
+            }
+
+            100% {
+                width: 0;
+                left: 30vw;
+                opacity: 0;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <main>
+            <img src="https://source.unsplash.com/random/800x600/?landscape" />
+            <h1>Click on hamburger Icon</h1>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+            <section>
+                lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson lorem lipson
+            </section>
+        </main>
+        <div class="navigation">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function mobileNavClick(e) {
+            e.preventDefault();
+            const body = document.querySelector('body');
+            if (body.classList.contains('is-open-menu')) {
+                body.classList.remove('is-open-menu');
+                body.classList.add('is-close-menu');
+            } else {
+                body.classList.add('is-open-menu');
+                body.classList.remove('is-close-menu');
+            }
+        }
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener('click', (e) => mobileNavClick(e));
+    </script>
+</body>
+</html>
